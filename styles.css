@@ -1,0 +1,232 @@
+
+
+body{
+    margin: 0px;
+}
+
+ul li,li{
+    list-style-type: none;
+}
+
+
+                /* * * * * * * */
+                /* dark theme  */
+                /* * * * * * * */
+
+
+.dark-theme{
+    background-color: hsl(235, 21%, 11%);
+    min-height: 100%;
+    max-width: 100%;
+}
+
+.dark-theme #bg-image{
+    background: url(./images/bg-desktop-dark.jpg) no-repeat;
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    top: 0px;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+.dark-theme #todo-full-box{
+    position: fixed;
+    top: 10%;
+    height: 500px;
+    width: 100%;
+}
+
+.dark-theme #todo-box{
+    font-family: 'Josefin Sans', sans-serif;
+    height: 500px;
+    margin: 0 auto 0 auto;
+}
+
+@media only screen and (min-width: 1000px){
+    #todo-box{
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 1000px){
+    #todo-box{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 600px){
+    #todo-box{
+        width: 80%;
+    }
+}
+
+.dark-theme #todo-title{
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+}
+
+.dark-theme #theme-icon{
+    display: inline-block;
+    float: right;
+}
+
+
+.dark-theme #todo-list-div{
+    overflow: auto;
+    height: 350px;
+}
+
+.dark-theme #todo-main-textbox{
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: hsl(235, 24%, 19%);
+    color: rgba(255, 255, 255, 0.750);
+}
+
+.dark-theme #todo-list-div > div{
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(109, 106, 106);
+    background-color: hsl(237, 23%, 18%);
+    color: rgba(255, 255, 255, 0.750);
+    overflow: auto;
+}
+
+#todo-list-div > div > input{
+    margin: 17px 10px;
+}
+
+.dark-theme #todo-div-footer{
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(109, 106, 106);
+    background-color: hsl(237, 23%, 18%);
+    color: rgba(255, 255, 255, 0.500);
+}
+
+.dark-theme #todo-div-footer div{
+    display: inline-block;
+    padding: 15px 12px;
+}
+
+.dark-theme #todo-div-footer > div > a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.750);
+}
+
+#todo-list-div div img{
+    float: right;
+    margin: 15px 8px;
+}
+
+.dark-icon{
+    height: 35px;
+}
+
+                /* * * * * * * */
+                /* light theme */
+                /* * * * * * * */
+
+
+.light-theme{
+    background-color: rgb(229, 226, 226);
+    min-height: 100%;
+    max-width: 100%;
+}
+
+.light-theme #bg-image{
+    background: url(./images/bg-desktop-light.jpg) no-repeat;
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    top: 0px;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+.light-theme #todo-full-box{
+    position: fixed;
+    top: 10%;
+    height: 500px;
+    width: 100%;
+}
+
+.light-theme #todo-box{
+    font-family: 'Josefin Sans', sans-serif;
+    height: 500px;
+    margin: 0 auto 0 auto;
+}
+
+.light-theme #todo-title{
+    display: inline-block;
+    color: black;
+    font-weight: 700;
+}
+
+.light-theme #theme-icon{
+    display: inline-block;
+    float: right;
+
+}
+
+.light-theme #todo-list-div{
+    overflow: auto;
+    height: 350px;
+}
+
+.light-theme #todo-main-textbox{
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    color: rgba(29, 28, 28, 0.750);
+}
+
+.light-theme #todo-list-div > div{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: 1px solid rgb(177, 173, 173);
+    color: rgba(29, 28, 28, 0.750);
+    overflow: auto;
+}
+
+.light-theme #todo-div-footer{
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: 1px solid rgb(177, 173, 173);
+    color: rgba(29, 28, 28, 0.550);
+}
+
+.light-theme #todo-div-footer div{
+    display: inline-block;
+    padding: 15px 12px;
+}
+
+.light-theme #todo-div-footer > div > a{
+    text-decoration: none;
+    color: rgba(29, 28, 28, 0.750);
+}
+
+.light-icon{
+    height: 35px;
+}
+
+.attribution { 
+    position: fixed;
+    bottom: 2px;
+    right: 5px;
+    color: rgb(214, 57, 57);
+    font-size: 12px; 
+}
+.attribution a { 
+    color: rgb(214, 57, 57); 
+}

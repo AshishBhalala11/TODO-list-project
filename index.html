@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<!--
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+-->
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Todo app</title>
+</head>
+   <!-- Todo
+  items left
+  All
+  Active 
+  Completed
+  Clear Completed
+  Drag and drop to reorder list -->
+<body id="body" class="dark-theme">
+  <div>
+    <div id="bg-image" >
+    </div>
+    <div id="todo-full-box" >
+      <div id="todo-box" >
+        <h1 id="todo-title">T O D O</h1>
+
+        <div id="theme-icon" ><a onclick = "onThemeClick()" href="#"><img id="theme-image" class="dark-icon" src="images/NicePng_sun-icon-png_1215503.png" height="35px" style="margin:8px"></a></div><br/><br/>
+
+        <input id="todo-main-textbox"  type="text" placeholder=" Type your next task here">
+        <br/>
+        <div id="todo-list-div" >
+          <!--  for reference purpose
+          <div>
+            <input  type="checkbox" name="next-todo-list">
+            <label for="next-todo-list"></label>
+            <a onclick = "closeTodo()" href="#" ><img src="images/icon-cross.png"></a>
+          </div>
+          -->
+          <section id="todo-div-footer" style="font-size: 13px;">
+            <div>
+              <span id="todo-left">0 items left</span>
+            </div>
+            <div style="float: right;"> 
+              <a href="#" style="color: rgb(50, 130, 221); ">All</a>
+        
+              <a href="#" onclick = "clearCompleted()" style="padding-left: 30px;">Clear Completed</a>
+            </div>
+                        
+          </section>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Ashish Bhalala</a>.
+    </div>
+  </div>
+  
+  
+ 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+
+  <script src="app.js"></script>
+</body>
+</html>
